@@ -75,6 +75,9 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
         <version>${maven-checkstyle-plugin.version}</version>
         <dependencies>
           <dependency>
