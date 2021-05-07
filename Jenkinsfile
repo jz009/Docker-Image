@@ -2,7 +2,7 @@ pipeline{
     agent any
     stages{
         stage("Build"){
-            agent{docker {image 'maven:3.6.2'} }
+            agent{docker {image 'maven:3.6.3'} }
             steps{
                 git 'https://github.com/jz009/Docker-Image.git/'
                 sh 'mvn --version'
