@@ -11,7 +11,7 @@ pipeline{
         }
         stage("Deploy"){
             steps{
-                sh "docker build -t jav ."
+                sh "docker build jav ."
                 sh "docker run -d -p 8081:8080 jav sh"
             }
         }
